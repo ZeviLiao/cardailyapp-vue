@@ -23,7 +23,17 @@ export default new Router({
           component: () => import('@/views/home/Home.vue')
         },
         {
-          path: 'promotions',
+          path: '/notifications',
+          name: 'notifications',
+          component: () => import('@/views/notifications/Notifications.vue')
+        },
+        {
+          path: '/notifications/:id',
+          name: 'messageDetail',
+          component: () => import('@/views/notifications/MessageDetail.vue')
+        },
+        {
+          path: '/promotions',
           name: 'promotions',
           component: () => import('@/views/promotions/Promotions.vue')
         },
